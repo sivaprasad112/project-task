@@ -21,7 +21,7 @@ jobs:
 
     # Frontend Image
     - name: Build Frontend Docker Image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/my-frontend:latest ./frontend
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/my-frontend:latest crud-dd-task-mean-app/crud-dd-task-mean-app/frontend
 
     - name: Push Frontend Image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/my-frontend:latest
